@@ -1,0 +1,77 @@
+.title {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    font-weight: 100;
+}
+.title::before {
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* Start Collections */
+.collections {
+    padding-bottom: 60px;
+}
+.collections .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.collections .container .collection {
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .collections .container { display: block; }
+    .collections .container .collection { width: auto; }
+    .collections .container .collection .child {
+        display: none;
+    }
+}
+.collections .container .collection .parent {
+    position: relative;
+    transition: .5s;
+    border: 2px solid #333
+}
+.collections .container .collection .parent:hover a::before {
+    width: 100%;
+}
+.collections .container .collection .parent a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .2s;
+}
+.collections .container .collection div {
+    position: relative;
+}
+.collections .container .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collections .container .collection span {
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 50%);
+    color: #fff;
+    padding: 6px 12px;
+}
+.collections .container .collection span.collectionTitle {
+    left: 0;
+}
+.collections .container .collection span.collectionAmount {
+    right: 0;
+}

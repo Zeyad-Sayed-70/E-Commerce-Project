@@ -1,0 +1,17 @@
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer ul a {
+    text-decoration: none;
+    color: #F8F9FA;
+    transition: .3S;
+}
+.footer ul a:hover {
+    color: #e97e3d;
+}
+.copyrights {
+    border-top: 1px solid;
+    background-color: #000;
+}

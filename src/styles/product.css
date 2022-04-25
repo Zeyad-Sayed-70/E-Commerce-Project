@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .history  {
+        padding: 20px 0;
+        font-size: 10px;
+        gap: 0;
+    }
+}
+
+.product-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+@media (max-width: 767px) {
+    .product-content .container {
+        flex-direction: column;
+    }
+    .product-content .container .img {
+        width: 100%;
+    }
+}
+.product-content .container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.product-content .container .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px auto;
+}
+.product-content .container .imgs .img {
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+}
+.product-content .img-content {
+    overflow: hidden;
+    position: relative;
+}
+.product-content .container .zoomImg,
+.product-content .container .zoomImg.active {
+    display: none;
+}
+@media (min-width: 767px) {
+    .product-content .container .zoomImg {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+    .product-content .container .zoomImg.active {
+        display: block;
+    }
+}
+.product-content .container .imgs .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-content .container .imgs .img.active::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* info */
+.product-content .info {
+    padding: 0 20px;
+}
+@media (max-width: 767px) {
+    .product-content .info {
+        width: 100%;
+        padding: 0;
+    }
+}
+.product-content .info .header h4 {
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.product-content .info .header span {
+    font-size: 25px;
+}
+.product-content .info .checkout {
+    flex-wrap: wrap;
+}
+.product-content .info .checkout .amount {
+    display: flex;
+    justify-content: center;
+}
+.product-content .info .checkout .amount button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.product-content .info .checkout .amount button:hover {
+    background-color: #d4d4d4;
+}
+.product-content .info .checkout .amount span {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+}
+.product-content .info .checkout .amount span:focus {
+    outline: none;
+}
+.product-content .info .checkout .addtocart,
+.product-content .info .checkout .buy {
+    width: calc(70%);
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    height: 40px;
+}
+.product-content .info .checkout .addtocart {
+    border: 2px solid #333;
+    margin: 0 auto;
+    display: block;
+}
+@media (min-width: 767px) {
+    .product-content .info .checkout .addtocart {
+        width: 100%;
+    }
+}
+.product-content .info .checkout .buy {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+}
+.product-content .info .checkout .buy:hover {
+    background-color: rgb(68, 68, 68);
+}
+.product-content .product-info {
+    text-align: center;
+}
+.product-content .product-info p span {
+    font-weight: bold;
+}
+
+.product-content .media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.product-content .media svg {
+    font-size: 35px !important;
+    color: rgba(0, 0, 0, 0.531);
+    cursor: pointer;
+}
+
+/* description */
+
+.description .container .selector {
+    border-bottom: 1px solid rgb(191, 191, 191);
+}
+.description .container .selector ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.description .container .selector ul li {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+.description .container .selector ul li.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 1px;
+    transition: .3s;
+}
+@media (max-width: 767px) {
+    .description .container .content ul {
+        padding: 5px;
+        margin: 0;
+    }
+}
+.description .desciption-content {
+    display: none;
+}
+.description .desciption-content.active {
+    display: block;
+}
+.description .container .content {
+    min-height: 300px;
+}

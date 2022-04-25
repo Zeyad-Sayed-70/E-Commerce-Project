@@ -1,0 +1,32 @@
+.cart .products .amount {
+    display: flex;
+    justify-content: center;
+}
+
+.cart .products .amount button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart .products .amount button:hover {
+    background-color: #d4d4d4;
+}
+
+.cart .products .amount span {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+}
+
+.cart .products .amount span:focus {
+    outline: none;
+}
