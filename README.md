@@ -1,5 +1,5 @@
 # E-Commerce-Project
-Fouture e-commerce with Category for products, Wish List, Sign In, Checkout, etc...
+Furniture e-commerce with Categories for products, Wish List, Sign In, Checkout, etc...
 
 this project build by:
 
