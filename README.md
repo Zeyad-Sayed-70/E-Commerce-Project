@@ -1,2 +1,12 @@
 # E-Commerce-Project
-e-commerce website build with react. Demo for Project: https://dreamy-liger-b73763.netlify.app/
+Fouture e-commerce with Category for products, Wish List, Sign In, Checkout, etc...
+
+this project build by:
+
+- React.js
+- React Hooks
+- React Router
+- React bootstrap
+- React Hook Form with ( yup )
+- JSON
+- CSS
