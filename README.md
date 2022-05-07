@@ -1,5 +1,5 @@
 # E-Commerce-Project
-Furniture e-commerce with Categories for products, Wish List, Sign In, Checkout, etc...
+**Furniture** e-commerce with Categories for products, Wish List, Sign In, Checkout, etc...
 
 this project build by:
 
@@ -11,4 +11,6 @@ this project build by:
 - JSON
 - CSS
 
-Demo To Watch Project =>>> https://dreamy-liger-b73763.netlify.app/
+Demo To Watch Project =>>> [Surprise Shop](https://dreamy-liger-b73763.netlify.app/)
+
+![surprie img for preview](./public/preview.png)
